@@ -1,0 +1,172 @@
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Exo',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display:grid;
+    place-items: center;
+    height: 100vh;
+    background: #d4e0ee;
+
+}
+
+
+.quiz{
+    height: auto;
+    width:580px;
+    padding: 20px;
+    background: #e7f;
+    border-radius: 30px 10px;
+    border: 1px solid #b0c4d8;
+}
+
+
+.quiz{
+    display: block;
+    height: 480px;
+    position: relative;
+}
+
+
+.quiz .quiz-head{
+    height: 60px;
+    width: 100%;
+    background: #fafafa;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 30px 0;
+}
+
+
+.quiz .quiz-head h5{
+    font-size: 28px;
+    margin: 0 20px;
+    color: #ff5235;
+}
+
+/* the Quize */
+.quiz .question{
+    position: absolute;
+    top: 90px;
+    display: flex;
+    flex-direction: row;
+}
+
+.quiz .question h2{
+    font-size: 27px;
+}
+
+.quiz .question h2:first-child{
+    margin: 0 10px ;
+}
+
+.quiz .optionlist{
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top:160;
+    margin-top: 150px;
+}
+
+.quiz .optionlist h4{
+    height: 50px;
+    width: 535px;
+    background: #ff5235;
+    line-height: 50px;
+    margin: 5px 0;
+    border-radius: 7px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #fff;
+    overflow: hidden;
+    border: 1px solid #b0c4d8;
+    cursor: pointer;
+
+}
+
+.quiz .optionlist h4:hover{
+    background: #391e3a;
+
+}
+
+
+.quiz .optionlist h4.active{
+    background: #391e3a;
+    
+}
+
+.quiz .optionlist h4.disable{
+    pointer-events: none;
+    
+}
+
+.quiz .anwsersection{
+    height: 60px;
+    width: 100%;
+    background: #fafafc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    border-radius: 30px 0;
+
+
+}
+
+
+.quiz .anwsersection h3{
+    margin: 20px 30px;
+}
+
+.quiz .anwsersection h3:last-child{
+    height: 40px;
+    width: 160px;
+    display:grid;
+    place-items: center;
+    background: #ff5235;
+    position: absolute;
+    right: 0;
+    color: #e7f;
+    border: 1px solid #b0c4d8;
+    font-size: 10px;
+    border-radius: 20px 5px;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.quiz .anwsersection h3:hover{
+    background: #e91e3a;
+}
+
+
+.quiz .anwsersection h3:first-child:hover{
+    background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
