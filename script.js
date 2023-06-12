@@ -218,8 +218,21 @@ choice_ques.forEach((choices) => {
                 scoreCounter += 0;
             }
     
-          }
-        
+        }
+    
+        if(scoreCounter == 100){
+            window.alert(` CONGRATULATIONS You WON!! CapacityBAY QUIZE With  point of ${scoreCounter}... `)
+        } else if(scoreCounter == 70){
+            window.alert(`WOW!! you Got An Arrage SCORE of ${scoreCounter}`)
+   
+        } else if(scoreCounter == 60){
+            window.alert(`WOW!! you have An Arrage SCORE of ${scoreCounter}`)
+        }else if(scoreCounter == 50){
+            window.alert(`WOW!! You have An Arrage SCORE of ${scoreCounter}`)
+        }
+
+
+    
         // for (i = 0; i <= 3; i++) {
         //     choice_ques[i].classList.add("disabled")
         // }
@@ -237,11 +250,34 @@ nexquestion.addEventListener("click", () => {
         })
     };
     
+    if(index === MCQS.length -1){
+        if(scoreCounter === 70){
+            window.alert(`WOW!! you Got An Arrage SCORE of ${scoreCounter}`)
+            window.location.href="./question.html"
+            
+        }else if(scoreCounter ===60){
+            window.alert(`WOW!! you Got An Arrage SCORE of ${scoreCounter}`)
+            window.location.href="./question.html"
+        }
+        else if(scoreCounter === 40){
+            window.alert(`WOW!! you Got An Arrage SCORE of ${scoreCounter}`)
+            window.location.href="./question.html"
+        }else if(scoreCounter ===30){
+            window.alert(`WOW!! you Got An Arrage SCORE of ${scoreCounter}`)
+            window.location.href="./question.html"
+        }else if(scoreCounter ===20){
+            window.alert(`WOW!! you Got An Arrage SCORE of ${scoreCounter}`)
+            window.location.href="./question.html"
+        }else if(scoreCounter === 10){
+            window.alert(`WOW!! you Got An Arrage SCORE of ${scoreCounter}`)
+            window.location.href="./question.html"
+        }
+    }
     loadDate();
 
     // result
     total_correct.style.display = "block";
-    total_correct.innerHTML = ` You got ${scoreCounter} Points  out of the  ${MCQS.length} Question`;
+    total_correct.innerHTML = ` You got ${scoreCounter} Points`;
 })
 
 
